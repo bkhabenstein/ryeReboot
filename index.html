@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RYE | Thoughtful Indulgence</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+<!--    <link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <header>
+<!--  Navbar  -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#landing">RYE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#specialevents">Our Plans</a>
+            <a class="nav-item nav-link" href="#about">Our Thoughts</a>
+            <a class="nav-item nav-link" href="#kitchenmenu">Our Kitchen</a>
+            <a class="nav-item nav-link" href="#barmenu">Our Bar</a>
+            <a class="nav-item nav-link" href="#privatedining">Your Occasions</a>
+            <a class="nav-item nav-link" href="#contact">Our Contact</a>
+          </div>
+        </div>
+      </nav><!--  /Navbar  -->
+    </header>
+ 
+<!--  Landing  -->
+    <main>
+      <section id="landing">
+        <h1 class="display-1" id="invite">COME OVER FOR SUPPER</h1>
+        <!--  Reservation Button  -->
+        <div class="btn-group" role="group" aria-label="Reservation button">
+          <a class="btn btn-lg btn-outline-light" id="reservationButton" href="https://resy.com/cities/lou/rye">RESERVE YOUR TABLE</a>
+          <script src="https://widgets.resy.com/embed.js"></script>
+          <script>
+            resyWidget.addButton(document.getElementById('resyButton-zsy721q3'), {"venueId":827,"apiKey":"reOC7pYeEuWOZfDl7lKhkp9lQaaQB75v","replace":true});
+          </script>
+        </div> <!-- /Reservation Button  -->
+      </section>
+    </main><!--  /Landing  -->
+    
+    
+<!--  Special Events  -->
+    <section id="specialevents">
+      <h3>Our Plans</h3>
+    <!--  Schedule  -->
+      <div class="container" id="eventsSchedule">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">September Back Porch Session</h5>
+              <small>September 27</small>
+            </div>
+            <p class="mb-1">Blackbirds of Paradise, Howell Dawdy, and Twenty-first Century Fox performing!</p>
+            <small>No foreign food or drinks.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Commonwealth Cure Nose-to-Tail Dinner</h5>
+              <small class="text-muted">November 19</small>
+            </div>
+            <p class="mb-1">The folks from Commonwealth Cure will be demonstrating the proper process of butchering a whole pig.</p>
+            <small class="text-muted">$100/Person</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Miracle Bar!</h5>
+              <small class="text-muted">November 24 - December 24</small>
+            </div>
+            <p class="mb-1">Join us for the most seasonal of seasonal cocktails among the most Christmas-y of Christmas decorations!</p>
+            <small class="text-muted">111 S. Clay St</small>
+          </a>
+        </div>
+      </div><!--  /Schedule  -->
+      <!------------------------
+        Form Modal
+       ------------------------->
+      <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto my-5" id="eventsButton" data-toggle="modal" data-target="#eventsMailing">
+          JOIN OUR EVENTS MAILING LIST
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="eventsMailing" tabindex="-1" role="dialog" aria-labelledby="events mailing form" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h5 class="modal-title text-light" id="eventsMailing">Receive email invitations to our special events!</h5>
+                <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <form class="container" id="eventsSignUp">
+                  <div class="form-group">
+                    <label class="col-form-label sr-only" for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label sr-only" for="email">E-Mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+      <!------------------------
+        /Form Modal
+       ------------------------->
+    </section><!--  /Special Events-->
+    
+    
+<!--  About  -->
+    <section id="about">
+      <h3 id="ourthoughts">Our Thoughts</h3>
+      <div class="about">
+<!--        <img src="img/IMG_1055-253.jpg" alt="Bone-in ribeyes being cut in house" class="the-butcher">-->
+        <div class="about-text">
+          <p>At RYE, we believe food should be approachable yet challenging. Something that pushes the senses and comforts the soul. Founded on the conviction that our most valued social experiences are created around food — RYE believes food exudes an energy that is, at times, indescribable. We believe that local and regional food simply tastes better. Capitalizing on the unrivaled products of our local farms, RYE focuses on using sustainable, seasonal, unadulterated ingredients… Beyond what we believe — You can trust that we are focused on being the very best at what we do.</p>
+        </div>
+      </div>
+    </section><!--  /About  -->
+    
+<!--  Kitchen Menu  -->
+    <section id="kitchenmenu">
+      <div id="eats">
+        <!--   Starters   -->
+        <div id="starters">
+          <h4>STARTERS</h4>
+            <ul>
+            <li id="starter1"><strong>raw oysters</strong></li>
+              <ul id="oystersubmenu">
+                <li>great white (long island sound, new york)   3</li>
+                <li>katana bay (martha's vineyard, massachusetts)   3</li>
+              </ul>
+            <li id="starter2"><strong>charcuterie board</strong></li>
+              <ul>
+                <li>finocchiono, mortadella, pork terrine, + accompaniments &amp; bread   18</li>
+              </ul>
+            <li id="starter3"><strong>cheese board</strong></li>
+              <ul>
+                <li>beemster xo, point reyes blue, kennuy's awe brie +accompaniments &amp; bread   18</li>
+              </ul>
+            </ul>
+        </div><!--  /Starters  -->
+
+        <!--  Small Plates  -->
+        <div id="smallplates">
+          <h4>SMALL PLATES</h4>
+            <ul>
+              <li id="sp1"><strong>fall greens salad</strong></li>
+                <ul>
+                  <li>fried quinoa, horseradish, blood orange yogurt, manchego   12</li>
+                </ul>
+              <li id="sp2"><strong>red kuri pumpkin soup</strong></li>
+                <ul>
+                  <li>buttermilk yogurt, kenny's cheddar, ancho chili, pepitas   10</li>
+                </ul>
+              <li id="sp3"><strong>eggplant caponata</strong></li>
+                <ul>
+                  <li>burrata, country bread, hazelnut, lovage   12</li>
+                </ul>
+            </ul>
+        </div><!--  /Small Plates  -->
+
+        <!--   Mains   -->
+        <div id="mains">
+          <h4>MAINS</h4>
+            <ul>
+              <li id="mains1"><strong>lamb burger</strong></li>
+                <ul>
+                  <li>arugula, sherry mayo, red onion, sesame seed bun, comté cheese, cornichon   16</li>
+                </ul>
+              <li id="mains2"><strong>bangers 'n mash</strong></li>
+                <ul>
+                  <li>broccoli rabe, green peppercorn, white gravy   20</li>
+                </ul>
+              <li id="mains3"><strong>house made pappardelle</strong></li>
+                <ul>
+                  <li>rabbit sugo, pecorino, fried sage   18</li>
+                </ul>
+              <li id="mains4"><strong>pan-seared trout</strong></li>
+                <ul>
+                  <li>brown almond butter, apple &amp; celery root purée, spicy greens   20</li>
+                </ul>
+              <li id="mains5"><strong>seared duck breast</strong></li>
+                <ul>
+                  <li>endive, roasted grapes, black lentils, early grey tea, mustard seed   26</li>
+                </ul>
+              <li id="mains6"><strong>bone-in ribeye to share</strong></li>
+                <ul>
+                  <li>chive hollandaise, triple cooked fries, grilled lemon   2/oz</li>
+                </ul>
+            </ul>
+        </div><!--   /Mains   -->
+
+        <!--   To Share   -->
+        <div id="toshare">
+          <h4>TO SHARE</h4>
+            <ul>
+              <li id="share1"><strong>triple cooked fries</strong></li>
+                <ul>
+                  <li>with sambal aioli   6</li>
+                </ul>
+              <li id="share2"><strong>grilled carrots</strong></li>
+                <ul>
+                  <li>pomegranate, feta, white bean hummus, mint   8</li>
+                </ul>
+              <li id="share3"><strong>sautéed brussels sprouts</strong></li>
+                <ul>
+                  <li>date, calabrian chile, benton's bacon   8</li>
+                </ul>
+            </ul>
+        </div><!--   /To Share   -->
+
+        <!--   Dessert   -->
+        <div id="dessert">
+          <h4>DESSERT</h4>
+            <ul>
+              <li id="dessert1"><strong>cake</strong></li>
+                <ul>
+                  <li>pumpkin cake, warm butterscotch, brown sugar cookie, cream cheese ice cream</li>
+                </ul>
+              <li id="dessert2"><strong>ice cream sandwich</strong></li>
+                <ul>
+                  <li>mint chip ice cream, chocolate fudge, cocoa nib</li>
+                </ul>
+              <li id="dessert3"><strong>napoleon</strong></li>
+                <ul>
+                  <li>caramel mousse, puff pastry, stewed apples, cinnamon</li>
+                </ul>
+              <li id="dessert4"><strong>seasonal ice cream</strong></li>
+                <ul>
+                  <li>daily selections</li>
+                </ul>
+              <li id="dessert5"><strong>cheese board</strong></li>
+                <ul>
+                  <li>old fo' honey, bourbon cherries, blue dog baguette</li>
+                </ul>
+            </ul>
+        </div><!--   /Dessert   -->
+      </div>
+      
+<!--      <img src="img/IMG_1047-245.jpg" alt="Steak frites" class="steakfrites">-->
+    </section><!--  /Kitchen Menu  -->
+    
+<!--  Bar Menu  -->
+    <section id="barmenu">
+      <div class="barflex1 item">
+        <h3>COCKTAILS</h3>
+          <p class="barblurb">our cocktails are made with fresh juices squeezed daily. all syrups are made in house. in addition to these seasonal cocktails, we also offer a list of standards and classics.</p>
+          <ul>
+              <li id="bar1"><strong>say your right words</strong></li>
+                <ul>
+                  <li>gin, vanilla, yellow chartreuse, lime, orange bitters   11</li>
+                </ul>
+              <li id="bar2"><strong>the goblin king</strong></li>
+                <ul>
+                  <li>absinthe, green chartreuse, dry vermouth   10</li>
+                </ul>
+              <li id="bar3"><strong>down in the underground</strong></li>
+                <ul>
+                  <li>rye, mezcal, ramazzotti, sage, english tea, bitters   11</li>
+                </ul>
+              <li id="bar4"><strong>babe with the power</strong></li>
+                <ul>
+                  <li>vodka, saler's aperitif, lime, blanc vermouth, butterfly pea tea   9</li>
+                </ul>
+              <li id="bar5"><strong>the oubliette</strong></li>
+                <ul>
+                  <li>reposado tequila, scotch, ristretto, spanish vermouth, molé   9</li>
+                </ul>
+              <li id="bar6"><strong>chilly down</strong></li>
+                <ul>
+                  <li>bourbon, pine, lemon, apple butter, sugar   11</li>
+                </ul>
+              <li id="bar4"><strong>forget about the baby</strong></li>
+                <ul>
+                  <li>apple brandy, cardamaro, rum, maple, angostura   11</li>
+                </ul>
+              <li id="bar5"><strong>it's only forever</strong></li>
+                <ul>
+                  <li>bourbon, plum gin, lemon, fig, egg white, allspice   9</li>
+                </ul>
+              <li id="bar6"><strong>the thirteenth hour</strong></li>
+                <ul>
+                  <li>sweet vermouth, chamomile, sparkling</li>
+                </ul>
+            </ul>
+      </div>
+<!--
+      <div class="barflex2 item">
+        <img src="img/Bar%20-%20Lauryn.jpg" alt="Rye's bar full of patrons in the evening" class="barroom">
+      </div>
+-->
+    </section><!--  /Bar Menu  -->
+    
+<!--  Private Dining  -->
+    <section id="privatedining">
+      <div class="container privateDining">
+        <h3>For Your Occasions</h3>
+        <p class="item">we would love to host your more intimate gatherings in either our private dining room upstairs, our event space at the green building, or in the entire restaurant. for more information please contack our events coordinator</p>
+        <form class="container" id="eventsForm">
+          <div class="form-group">
+            <input type="name" class="form-control" id="efName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="efEmail" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="phone" class="form-control" id="efPhone" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <input type="date" class="form-control" id="efDate" placeholder="Date">
+          </div>
+          <div class="form-group">
+            <input type="guestcount" class="form-control" id="efGuests" placeholder="Number of Guests">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="efRequests" rows="6" placeholder="Special Requests"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+<!--
+        <img src="img/pdr.jpg" alt="Private dining room" class="item pdr">
+        <img src="img/offsitecleansetting.jpg" alt="picnic" class="item gardenTable">
+        <img src="img/offsitebuffet.png" alt="buffet" class="item gardenBuffet">
+        <img src="img/offsitebar.png" alt="garden bar" class="item gardenbar">
+-->
+      </div>  
+    </section><!--  /Private Dining  -->
+
+    
+<!--  Contact  -->
+    <section id="contact">
+      <p>Join us for dinner and drinks</p>
+      <p>Tue - Sat @ 5 o'clock p</p>
+      <p>502.749.6200</p>
+      <p>900 East Market Street</p>
+      <p>Louisville, Kentucky 40206</p>
+      
+    </section><!--  /Contact  -->
+    
+    <footer>
+      <p><small>&copy;2017 RYE on Market</small></p>
+    </footer>
+    
+<!--  JavaScript  -->
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  </body>
+</html>
